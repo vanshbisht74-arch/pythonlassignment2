@@ -8,7 +8,7 @@ filter pass/fail students, and print formatted tables.
 
 import csv
 
-# Task 2: Data Entry / CSV Import
+
 
 def manual_entry():
     marks = {}
@@ -34,9 +34,7 @@ def csv_import():
     return marks
 
 
-# -----------------------
-# Task 3: Statistical Analysis
-# -----------------------
+
 
 def calculate_average(marks):
     return sum(marks.values()) / len(marks)
@@ -57,9 +55,7 @@ def find_min_score(marks):
     return min(marks.values())
 
 
-# -----------------------
-# Task 4: Grade Assignment
-# -----------------------
+
 
 def assign_grades(marks):
     grades = {}
@@ -77,19 +73,12 @@ def assign_grades(marks):
     return grades
 
 
-# -----------------------
-# Task 5: Pass/Fail with List Comprehension
-# -----------------------
 
 def pass_fail_filter(marks):
     passed = [name for name, score in marks.items() if score >= 40]
     failed = [name for name, score in marks.items() if score < 40]
     return passed, failed
 
-
-# -----------------------
-# Task 6: Results Table + Menu Loop
-# -----------------------
 
 def print_table(marks, grades):
     print("\nName\tMarks\tGrade")
@@ -107,9 +96,7 @@ def main_menu():
     return choice
 
 
-# -----------------------
-# Main Program Loop
-# -----------
+
 
 def main():
     print("Welcome to GradeBook Analyzer (By Vansh Viraj Bisht)\n")
@@ -131,7 +118,7 @@ def main():
             print("Invalid choice! Try again.")
             continue
 
-        # Perform all analysis
+        
         print("\n--- Analysis Summary ---")
         print(f"Average Marks: {calculate_average(marks):.2f}")
         print(f"Median Marks : {calculate_median(marks)}")
@@ -151,4 +138,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
