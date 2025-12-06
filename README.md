@@ -5,8 +5,7 @@ A Python-based CLI tool for analysing and reporting student grades.
 ## 📌 Course
 Programming for Problem Solving using Python  
 *Mini Assignment Title:* Analyzing and Reporting Student Grades  
-*Author:* Vansh Viraj Bisht  
-*Faculty:* Dr. Ali  
+*Author:* Vansh Viraj Bisht    
 
 ---
 
